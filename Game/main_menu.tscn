@@ -1,0 +1,164 @@
+[gd_scene load_steps=9 format=3 uid="uid://cw22ooo62p11r"]
+
+[ext_resource type="Script" uid="uid://0rphjpbr82b" path="res://Game/main_menu_text_replace.gd" id="1_2uogn"]
+[ext_resource type="Script" uid="uid://cyquv0vv80k18" path="res://addons/tnowe_extra_controls/elements/child_transform_container.gd" id="1_gl5pw"]
+[ext_resource type="ButtonGroup" uid="uid://d0q0dfglfy2ti" path="res://Game/main_menu_buttons.tres" id="2_nu65f"]
+[ext_resource type="Script" uid="uid://d11kfgsd6jgt" path="res://addons/AutoSizeText/ui/AutoSizeLabel.gd" id="3_444o2"]
+[ext_resource type="Script" uid="uid://bnaosc552evuy" path="res://addons/AutoSizeText/ui/AutoSizeButton.gd" id="3_y67r4"]
+[ext_resource type="Script" uid="uid://bv5xtsjakkpa5" path="res://quit_button/quit_button.gd" id="6_ceu5l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y67r4"]
+bg_color = Color(2.0696223e-06, 0, 0.6371477, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 1, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_bjiq0"]
+
+[node name="Main_Menu" type="Control"]
+auto_translate_mode = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2uogn")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_y67r4")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="ChildTransformContainer" type="Container" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+script = ExtResource("1_gl5pw")
+metadata/_custom_type_script = "uid://cyquv0vv80k18"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/ChildTransformContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+z_index = 1
+y_sort_enabled = true
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 100
+text = "MMT"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 3
+language = "en_US"
+script = ExtResource("3_444o2")
+watch_text_change = true
+min_font_size = 16
+max_font_size = 100
+metadata/_custom_type_script = "uid://d11kfgsd6jgt"
+
+[node name="AutoSizeButton" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_bjiq0")
+theme_override_font_sizes/font_size = 16
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text_overrun_behavior = 3
+clip_text = true
+script = ExtResource("3_y67r4")
+button_text = "MMB1"
+metadata/_custom_type_script = "uid://bnaosc552evuy"
+
+[node name="AutoSizeButton2" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_bjiq0")
+theme_override_font_sizes/font_size = 16
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text_overrun_behavior = 3
+clip_text = true
+script = ExtResource("3_y67r4")
+button_text = "MMB2"
+metadata/_custom_type_script = "uid://bnaosc552evuy"
+
+[node name="AutoSizeButton3" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_bjiq0")
+theme_override_font_sizes/font_size = 16
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text_overrun_behavior = 3
+clip_text = true
+script = ExtResource("3_y67r4")
+button_text = "MMB3"
+metadata/_custom_type_script = "uid://bnaosc552evuy"
+
+[node name="AutoSizeButton4" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_bjiq0")
+theme_override_font_sizes/font_size = 16
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text_overrun_behavior = 3
+clip_text = true
+script = ExtResource("3_y67r4")
+button_text = "MMB4"
+metadata/_custom_type_script = "uid://bnaosc552evuy"
+
+[node name="AutoSizeButton5" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_bjiq0")
+theme_override_font_sizes/font_size = 16
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text_overrun_behavior = 3
+clip_text = true
+script = ExtResource("3_y67r4")
+button_text = "MMB5"
+metadata/_custom_type_script = "uid://bnaosc552evuy"
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/ChildTransformContainer/VBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_nu65f")
+text = "MMB6"
+script = ExtResource("6_ceu5l")
+metadata/_custom_type_script = "uid://bv5xtsjakkpa5"
+
+[connection signal="ready" from="." to="." method="_on_ready"]

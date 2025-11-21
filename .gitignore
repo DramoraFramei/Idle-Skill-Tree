@@ -1,0 +1,42 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.nomedia
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_credentials.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+/output
+/test
+
+# Cursor specific ignores
+/.clinerules
+/.cursor
+/.roo
+/.vscode
+/.vs
+/addons
+/examples
+/test
+/output
+/example
+/images
+/quit_button
+/SECURITY.md
+/CODE_OF_CONDUCT.md
+/CONTRIBUTING.md
+/icon.png
+/icon.png.import
+/PlayerPrefs_Icon.png
+/PlayerPrefs_Icon.png.import
+/project.godot
+/ADDON LICENSE

@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://h7aknnqnh4y0"]
+
+[ext_resource type="Script" uid="uid://cbc6r3x84ejtj" path="res://addons/radial_progress/RadialProgress.gd" id="1_awvm1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wbhg"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.96862745, 0, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="Loading" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ResourcePreloader" type="ResourcePreloader" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5wbhg")
+
+[node name="RadialProgress" type="Control" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_awvm1")
+bg_color = Color(0, 0, 1, 1)
+bar_color = Color(1, 0.96862745, 0, 1)
+metadata/_custom_type_script = "uid://cbc6r3x84ejtj"

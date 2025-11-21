@@ -1,0 +1,41 @@
+{
+	"Game Info": {
+		"Name": "Idle Skill Tree",
+		"Author": "Dramora9879",
+		"Description": "This is an idle game that is focused on clicking to get points, using those points to buy experience which in turn increases your level. Once you hit the level-cap you will gain access to the rebirth and rebirth upgrades.",
+		"features": {
+			"Upgrades System": {
+				"Description": "There are ten sets of upgrades: Base Upgrade Sets, Rebirth Upgrade Sets, Prestige Upgrade Sets, and Regression Upgrade Sets. These sets are used to progress through the game.",
+				"Upgrade Sets": {
+					"Base Upgrade Sets": {
+						"Main": "These are the Main Base Upgrades, they are ten upgrades that are used to progress through the pre-rebirth stage. They are reset when you reach the level-cap and do a rebirth.",
+						"Permanent": "These are the Permanent Base Upgrades, they are ten upgrades that are used to progress through the pre-rebirth stage. They are not reset when you reach the level-cap and do a rebirth."
+					},
+					"Rebirth Upgrade Sets": {
+						"Main": "These are the Main Rebirth Upgrades, they are ten upgrades that are used to progress through the post-rebirth stage. They are reset when you reach the level-cap and do a rebirth.",
+						"Permanent": "These are the Permanent Rebirth Upgrades, they are ten upgrades that are used to progress through the post-rebirth stage. They are not reset when you reach the level-cap and do a rebirth."
+					},
+					"Prestige Upgrade Sets": {
+						"Main": "These are the Main Prestige Upgrades, they are ten upgrades that are used to progress through the prestige stage. They are reset when you reach the level-cap and do a prestige.",
+						"Permanent": "These are the Permanent Prestige Upgrades, they are ten upgrades that are used to progress through the prestige stage. They are not reset when you reach the level-cap and do a prestige."
+					},
+					"Regression Upgrade Sets": {
+						"Main": "These are the Main Regression Upgrades, they are ten upgrades that are used to progress through the regression stage. They are reset when you reach the level-cap and do a regression.",
+						"Permanent": "These are the Permanent Regression Upgrades, they are ten upgrades that are used to progress through the regression stage. They are not reset when you reach the level-cap and do a regression."
+					}
+				}
+			},
+			"Achievements System": {
+				"Description": "There are a lot of achievements, each achievement is also linked to an upgrade. Once you complete an achievement, you will unlock the upgrade."
+			},
+			"Skill Tree System": {
+				"Description": "There are a lot of skill tree nodes, each node is linked to a skill. Once you unlock a node, you will unlock the ability to spend skill points on the skill. The skill-tree is also linked to an upgrade. Once you unlock a skill-tree node, you will unlock the ability to spend skill points on the skill-tree. You can also reset the skill-tree to get back all the skill points you spent on it."
+			},
+			"Progression System": {
+				"Description": "The progression system is used to progress through the game. It is a series of stages that you can progress through by completing achievements, skill-tree nodes, and by buying upgrades."
+			}
+		},
+		"Version": "0.0.01-Pre-Alpha",
+		"Github Repository": "https://github.com/DramoraFramei/Idle-Skill-Tree"
+	}
+}
